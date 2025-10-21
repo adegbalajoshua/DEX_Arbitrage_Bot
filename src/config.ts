@@ -24,10 +24,10 @@ export const settings = {
   flashLoanAmount: '1', // e.g., 1 WETH
 };
 
-// Token & DEX Addresses for Sepolia Testnet
 export const addresses = {
-  WETH: '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9',
-  DAI: '0x68194a729C2450ad26072b3D33ADaCbcef39D574',
-  uniswapV2Router: '0xC532a74256D3Db421739eff4C62325Ab08118683',
-  sushiswapRouter: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
+  WETH: '0x4200000000000000000000000000000000000006', // WETH on Base
+  DAI: '0x...', // Find the DAI or equivalent stablecoin address on Base
+  aaveV3Pool: '0x...', // Find the Aave V3 Pool address on Base
+  uniswapV2Router: '0x...', // Find a Uniswap V2 fork router on Base
+  sushiswapRouter: '0x...', // Find another DEX router on Base
 };
