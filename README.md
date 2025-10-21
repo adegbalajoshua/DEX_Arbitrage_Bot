@@ -43,12 +43,14 @@ Before you begin, ensure you have the following installed:
 ## Installation
 
 - **Clone the repository:**  
-   git clone &lt;your-repo-url&gt;  
+   ```sh
+   git clone [DEX_Arbitrage_Bot](https://github.com/adegbalajoshua/DEX_Arbitrage_Bot);  
    cd DEX_Arbitrage_Bot
-
+   ```
 - **Install dependencies:**  
-   npm install
-
+  ```sh
+  npm install
+  ```
 ## Configuration
 
 - **Create an environment file:** Copy the example file to create your local configuration.  
@@ -72,35 +74,35 @@ Before you begin, ensure you have the following installed:
 ### Step 1: Compile the Smart Contract
 
 First, compile the Solidity code to ensure everything is correct.
-
+```bash
 npx hardhat compile
-
+```
 ### Step 2: Run Smart Contract Tests
 
 These tests run on a temporary fork of the Ethereum mainnet, allowing for realistic simulations without spending real gas.
-
+```bash
 npx hardhat test test/Arbitrage.test.ts
-
+```
 ### Step 3: Deploy the Smart Contract
 
 Deploy the contract to the Sepolia testnet.
-
+```bash
 npx hardhat run scripts/deploy.ts --network sepolia
-
+```
 After deployment, the script will output the contract address. **Copy this address and paste it into your .env file** for the ARBITRAGE_CONTRACT_ADDRESS variable.
 
 ### Step 4: Run Bot Logic Tests
 
 Test the off-chain profitability calculation to ensure it behaves as expected.
-
+```bash
 npm run test:bot
-
+```
 ### Step 5: Run the Arbitrage Bot
 
 Start the bot to begin monitoring the blockchain for opportunities.
-
+```bash
 npm start
-
+```
 The bot will log its activity to the console, including the prices it's checking and any transactions it sends.
 
 ## Troubleshooting
