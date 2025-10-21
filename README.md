@@ -44,7 +44,7 @@ Before you begin, ensure you have the following installed:
 
 - **Clone the repository:**  
    ```sh
-   git clone [DEX_Arbitrage_Bot](https://github.com/adegbalajoshua/DEX_Arbitrage_Bot);  
+   git clone https://github.com/adegbalajoshua/DEX_Arbitrage_Bot;  
    cd DEX_Arbitrage_Bot
    ```
 - **Install dependencies:**  
