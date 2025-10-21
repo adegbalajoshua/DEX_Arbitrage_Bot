@@ -1,0 +1,38 @@
+{
+  "name": "dex-arbitrage-bot",
+  "version": "1.0.0",
+  "description": "A PoC for a DEX arbitrage bot using flash loans.",
+  "main": "dist/bot.js",
+  "scripts": {
+    "start": "ts-node src/bot.ts",
+    "build": "tsc",
+    "test:contract": "hardhat test",
+    "test:bot": "mocha -r ts-node/register test/utils.test.ts",
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia"
+  },
+  "keywords": [
+    "defi",
+    "arbitrage",
+    "typescript",
+    "solidity"
+  ],
+  "author": "adegbalajoshua",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.12",
+    "chai": "^4.4.1",
+    "hardhat": "^2.22.5",
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2"
+  }
+}
